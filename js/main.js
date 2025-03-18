@@ -11,12 +11,12 @@ window.onload = function() {
 switch_button.addEventListener('click', function() {
     const current_css = style_sheet.getAttribute('href');
 
-    if (current_css === 'dark_styles.css') {
-        style_sheet.setAttribute('href', 'light_styles.css');
-        localStorage.setItem('current_css', 'light_styles.css');
+    if (current_css === '../css/dark_styles.css') {
+        style_sheet.setAttribute('href', '../css/light_styles.css');
+        localStorage.setItem('current_css', '../css/light_styles.css');
     }
     else {
-        style_sheet.setAttribute('href', 'dark_styles.css');
-        localStorage.setItem('current_css', 'dark_styles.css');
+        style_sheet.setAttribute('href', '../css/dark_styles.css');
+        localStorage.setItem('current_css', '../css/dark_styles.css');
     }
 });
