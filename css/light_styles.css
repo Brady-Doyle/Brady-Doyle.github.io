@@ -193,3 +193,7 @@ button:hover {
 summary {
     font-weight: bold;
   }
+
+figcaption {
+    font-size: 8px;
+}
