@@ -33,6 +33,10 @@ header nav {
     padding: 10px 0 0 20px;
 }
 
+.title-links a {
+    color: black;
+}
+
 .title-links:hover {
     text-decoration: underline;
     font-size: 24px;
