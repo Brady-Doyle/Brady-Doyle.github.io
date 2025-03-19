@@ -154,12 +154,12 @@ footer {
 }
 
 .foot-contacts img {
-    width: 70px;
+    width: 80px;
     padding: 40px;
 }
 
 .foot-contacts img:hover {
-    width: 80px;
+    width: 90px;
     padding: 40px;
 }
 
@@ -190,11 +190,6 @@ button:hover {
     text-decoration: underline;
 }
 
-details {
-    width: 300px;
-    border-radius: 5px;
-}
-
-  summary {
+summary {
     font-weight: bold;
   }
