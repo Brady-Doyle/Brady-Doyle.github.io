@@ -66,6 +66,10 @@ body {
     vertical-align: top;
 }
 
+.home figcaption {
+    font-size: 6px;
+}
+
 .home a {
     color: rgb(0, 119, 181);
 }
@@ -193,7 +197,3 @@ button:hover {
 summary {
     font-weight: bold;
   }
-
-figcaption {
-    font-size: 6px;
-}
