@@ -162,12 +162,12 @@ footer {
 }
 
 .foot-contacts img {
-    width: 70px;
+    width: 50px;
     padding: 40px;
 }
 
 .foot-contacts img:hover {
-    width: 80px;
+    width: 60px;
     padding: 40px;
 }
 
