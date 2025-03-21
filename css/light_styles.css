@@ -108,26 +108,26 @@ body {
 
 img {
     width: 100%;
-    max-width: 700px;
+    max-width: 800px;
     border-radius: 25px;
 }
 
 .detail1 {
-    font-size: 26px;
+    font-size: 30px;
     font-weight: bold;
 }
 
 .detail2 {
-    font-size: 22px;
+    font-size: 26px;
 }
 
 .padded_detail2 {
-    font-size: 22px;
+    font-size: 26px;
     padding: 10px 0 0 0;
 }
 
 .detail3 {
-    font-size: 18px;
+    font-size: 20px;
     text-align: left;
 }
 
@@ -141,7 +141,7 @@ img {
 }
 
 .detail4 {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 footer {
