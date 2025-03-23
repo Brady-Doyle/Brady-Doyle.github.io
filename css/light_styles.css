@@ -4,7 +4,7 @@ header {
     align-items: center;
     padding: 5%;
     position: relative;
-    height: 20%;
+    height: 10%;
 }
 
 header figure {
@@ -15,11 +15,11 @@ header figure {
 }
 
 header img {
-    width: 250px;
+    width: 200PX;
 }
 
 header nav {
-    width: 30%;
+    width: 35%;
 }
 
 .title {
@@ -27,27 +27,8 @@ header nav {
     font-weight: bold;
 }
 
-.title-links {
-    display: inline-block;
-    font-size: 22px;
-    padding: 10px 0 0 20px;
-}
-
-.title-links a {
-    color: black;
-}
-
-.title-links:hover {
-    text-decoration: underline;
-    font-size: 24px;
-}
-
-.links:visited {
-    color: black;
-}
-
 body {
-    background: rgb(240, 234, 214);
+    background: white;
     color: black;
     font-family: arial;
     margin: 0;
@@ -56,7 +37,7 @@ body {
 }
 
 .home {
-    background: rgb(240, 234, 214);
+    background: white;
     border-radius: 50px;
     color:black;
     width: 90%;
@@ -91,7 +72,7 @@ body {
 }
 
 .port {
-    background: rgb(240, 234, 214);
+    background: white;
     color: black;
     width: 90%;
     max-width: 1000px;
@@ -103,7 +84,7 @@ body {
 }
 
 .port figcaption {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 img {
@@ -121,23 +102,9 @@ img {
     font-size: 26px;
 }
 
-.padded_detail2 {
-    font-size: 26px;
-    padding: 10px 0 0 0;
-}
-
 .detail3 {
     font-size: 20px;
     text-align: left;
-}
-
-.detail3-list {
-    display: list-item;
-    list-style-type: disc
-}
-
-.detail3-list li {
-    padding: 5px;
 }
 
 .detail4 {
@@ -145,7 +112,7 @@ img {
 }
 
 footer {
-    background: rgb(240, 234, 214);
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,19 +132,51 @@ p {
     tab-size: 4;
 }
 
-a {
-    text-decoration: none;
-    color: rgb(240, 234, 214);
-}
-
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
+.title-links {
+    display: inline-block;
+    position: relative;
+    padding: 10px 0 0 20px;
+
+}
+
+ul li a {
+    color: black;
+    display: block;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+ul li ul.dropdown {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    display: none;
+    color: black;
+    padding: 10px 0 0 0;
+}
+
+ul li ul.dropdown li{
+    display: block;
+    color: black;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
 button {
-    color: rgb(240, 234, 214);
+    color: white;
     border-radius: 10px;
     background-color: black;
     font-size: 20px;
