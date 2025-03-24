@@ -111,6 +111,10 @@ img {
     font-size: 20px;
 }
 
+details {
+    padding: 0 0 40px 0;
+}
+
 footer {
     background: white;
     display: flex;
