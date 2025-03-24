@@ -137,6 +137,10 @@ ul {
     padding: 0;
 }
 
+details {
+    padding: 20px;
+}
+
 .title-links {
     display: inline-block;
     position: relative;
