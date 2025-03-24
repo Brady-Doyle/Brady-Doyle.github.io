@@ -96,7 +96,6 @@ img {
 .detail1 {
     font-size: 30px;
     font-weight: bold;
-    padding: 40px 0 0 0;
 }
 
 .detail2 {
@@ -110,10 +109,6 @@ img {
 
 .detail4 {
     font-size: 20px;
-}
-
-details {
-    padding: 0 0 40px 0;
 }
 
 footer {
