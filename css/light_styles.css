@@ -95,6 +95,7 @@ img {
 .detail1 {
     font-size: 30px;
     font-weight: bold;
+    padding: 40px 0 0 0;
 }
 
 .detail2 {
@@ -135,10 +136,6 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-details {
-    padding: 20px;
 }
 
 .title-links {
