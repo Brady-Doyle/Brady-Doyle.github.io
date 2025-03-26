@@ -2,28 +2,27 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5%;
-    position: relative;
-}
-
-header figure {
-    position: absolute;
-    margin: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-header img {
-    width: 200PX;
-}
-
-header nav {
-    width: 35%;
+    background-color: #2a9df4;
+    padding: 0 40px;
+    color: black;
 }
 
 .title {
-    font-size: 50px;
+    text-align: left;
+    width: 35%;
+    min-width: 140px;
+    font-weight: normal;
+
+}
+
+.logo h1 {
+    text-align: center;
     font-weight: bold;
+}
+
+nav {
+    width: 35%;
+    text-align: right;   
 }
 
 body {
@@ -95,6 +94,7 @@ img {
 .detail1 {
     font-size: 30px;
     font-weight: bold;
+    padding: 60px 0 0 0;
 }
 
 .detail2 {
@@ -133,27 +133,48 @@ p {
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 .title-links {
     display: inline-block;
     position: relative;
-    padding: 10px 0 0 20px;
+}
 
+.title-links:hover {
+    background-color: #d0efff;
+}
+
+.button-links {
+    display: inline-block;
+    position: relative;
+}
+
+.button-links:hover {
+    background-color: #d0efff;
 }
 
 ul li a {
-    color: white;
+    color: black;
     display: block;
+    padding: 15px 20px;
     font-size: 22px;
     text-decoration: none;
+    text-align: center;
 }
 
-ul li a:hover {
-    font-size: 24px;
-    text-decoration: underline;
+button {
+    color: black;
+    background-color: #2a9df4;
+    display: block;
+    padding: 15px 20px;
+    font-size: 22px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+}
+
+button:hover {
+    background-color: #d0efff;
 }
 
 ul li ul.dropdown {
@@ -161,29 +182,21 @@ ul li ul.dropdown {
     width: 100%;
     z-index: 999;
     display: none;
-    color: white;
-    padding: 10px 0 0 0;
+    padding: 0;
+    margin: 0;
 }
 
 ul li ul.dropdown li{
     display: block;
-    color: white;
+    background-color: #2a9df4;
+}
+
+ul li ul.dropdown li:hover{
+    background-color: #d0efff;
 }
 
 ul li:hover ul.dropdown {
     display: block;
-}
-
-button {
-    color: black;
-    border-radius: 10px;
-    background-color: white;
-    font-size: 20px;
-}
-
-button:hover {
-    font-size: 24px;
-    text-decoration: underline;
 }
 
 summary {
