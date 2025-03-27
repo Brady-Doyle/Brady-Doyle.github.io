@@ -20,3 +20,18 @@ switch_button.addEventListener('click', function() {
         localStorage.setItem('current_css', '../css/dark_styles.css');
     }
 });
+
+fetch('../yaml/crime_brady_1dec22.yaml')
+.then(response => response.text())
+.then(yamlString => {
+    const parsedData = jsyaml.load(yamlString);
+
+    console.log(parsedData);
+
+    document.getElementById('title').textContent = parsedData.title;
+    document.getElementById('subtitle').textContent = parsedData.subtitle;
+    document.getElementById('date').textContent = parsedData.date;
+    document.getElementById('author').textContent = parsedData.author;
+    document.getElementById('post').textContent = parsedData.post;
+})
+.catch(error => console.error('Error loading YAML file:', error));
