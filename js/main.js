@@ -1,7 +1,7 @@
 const style_sheet = document.getElementById('style_sheet')
 const switch_button = document.getElementById('switch_button')
-const dropdown = document.getElementById('dropdown')
-
+const dropdown_li = document.getElementById('dropdown_li')
+const dropdown_ul = document.getElementById('dropdown_ul')
 
 window.onload = function() {
     const stored_css = localStorage.getItem('current_css');
@@ -23,19 +23,18 @@ switch_button.addEventListener('click', function() {
     }
 });
 
-dropdown.addEventListener('click', function(event) {
-    if (dropdown.style.display === 'block') {
-        dropdown.style.display = 'none';
+dropdown_li.addEventListener('click', function(event) {
+    if (dropdown_ul.style.display === 'block') {
+        dropdown_ul.style.display = 'none';
     } 
     else {
-        dropdown.style.display = 'block';
+        dropdown_ul.style.display = 'block';
     }
-
     event.stopPropagation();
 });
 
 window.addEventListener('click', function(event) {
-    if (!dropdown.contains(event.target)) {
-        dropdown.style.display = 'none';
+    if (!dropdown_ul.contains(event.target)) {
+        dropdown_ul.style.display = 'none';
     }
 });

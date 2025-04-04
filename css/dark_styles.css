@@ -160,6 +160,10 @@ p {
     tab-size: 4;
 }
 
+a { 
+    cursor: pointer; 
+}
+
 ul {
     list-style-type: none;
 }
@@ -187,6 +191,7 @@ button {
     text-decoration: none;
     text-align: center;
     border: none;
+    cursor: pointer; 
 }
 
 button:hover {
