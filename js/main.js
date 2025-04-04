@@ -1,5 +1,7 @@
 const style_sheet = document.getElementById('style_sheet')
 const switch_button = document.getElementById('switch_button')
+const dropdown = document.getElementById('dropdown')
+
 
 window.onload = function() {
     const stored_css = localStorage.getItem('current_css');
@@ -19,4 +21,9 @@ switch_button.addEventListener('click', function() {
         style_sheet.setAttribute('href', '../css/dark_styles.css');
         localStorage.setItem('current_css', '../css/dark_styles.css');
     }
+});
+
+dropdown.addEventListener('click', function(event) {
+    dropdown.style.display = 'block';
+    event.stopPropagation();
 });
