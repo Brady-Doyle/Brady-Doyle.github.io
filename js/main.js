@@ -24,6 +24,18 @@ switch_button.addEventListener('click', function() {
 });
 
 dropdown.addEventListener('click', function(event) {
-    dropdown.style.display = 'block';
+    if (dropdown.style.display === 'block') {
+        dropdown.style.display = 'none';
+    } 
+    else {
+        dropdown.style.display = 'block';
+    }
+
     event.stopPropagation();
+});
+
+window.addEventListener('click', function(event) {
+    if (!dropdown.contains(event.target)) {
+        dropdown.style.display = 'none';
+    }
 });
