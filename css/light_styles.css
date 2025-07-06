@@ -38,20 +38,10 @@ nav {
 
 .title-links {
     display: inline-block;
-    position: relative;
-}
-
-.title-links:hover {
-    background-color: #c9a0dc;
 }
 
 .button-links {
     display: inline-block;
-    position: relative;
-}
-
-.button-links:hover {
-    background-color: #c9a0dc;
 }
 
 body {
@@ -132,11 +122,6 @@ img {
 
 .detail3 {
     font-size: 20px;
-    text-align: left;
-}
-
-.detail4 {
-    font-size: 20px;
 }
 
 footer {
@@ -183,19 +168,20 @@ ul li a:hover {
 }
 
 button {
-    color: black;
-    background-color: white;
-    display: block;
     padding: 15px 20px;
-    font-size: 22px;
-    text-decoration: none;
-    text-align: center;
     border: none;
-    cursor: pointer; 
+    background: none;
+    cursor: pointer;
 }
 
-button:hover {
-    background-color: #c9a0dc;
+button img {
+    width: 35px;
+    height: 35px;
+}
+
+button img:hover {
+    width: 40px;
+    height: 40px;
 }
 
 ul li ul.dropdown {
@@ -212,7 +198,7 @@ ul li ul.dropdown li{
     background-color: white;
 }
 
-ul li ul.dropdown li:hover{
+ul li ul.dropdown li a:hover{
     background-color: #c9a0dc;
 }
 

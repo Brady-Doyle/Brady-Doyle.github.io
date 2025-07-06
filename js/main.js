@@ -24,17 +24,7 @@ switch_button.addEventListener('click', function() {
 });
 
 dropdown_li.addEventListener('click', function(event) {
-    if (dropdown_ul.style.display === 'block') {
-        dropdown_ul.style.display = 'none';
-    } 
-    else {
-        dropdown_ul.style.display = 'block';
-    }
-    event.stopPropagation();
-});
+    dropdown_ul.style.display = 'none';
 
-window.addEventListener('click', function(event) {
-    if (!dropdown_ul.contains(event.target)) {
-        dropdown_ul.style.display = 'none';
-    }
+    event.stopPropagation();
 });
