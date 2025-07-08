@@ -1,6 +1,5 @@
 const style_sheet = document.getElementById('style_sheet')
 const switch_button = document.getElementById('switch_button')
-const dropdown_li = document.getElementById('dropdown_li')
 const dropdown_ul = document.getElementById('dropdown_ul')
 
 window.onload = function() {
@@ -23,7 +22,7 @@ switch_button.addEventListener('click', function() {
     }
 });
 
-dropdown_li.addEventListener('click', function(event) {
+dropdown_ul.addEventListener('click', function(event) {
     dropdown_ul.style.display = 'none';
 
     event.stopPropagation();
