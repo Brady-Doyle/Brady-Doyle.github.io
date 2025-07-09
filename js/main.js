@@ -1,6 +1,8 @@
 const style_sheet = document.getElementById('style_sheet')
 const switch_button = document.getElementById('switch_button')
-const dropdown_ul = document.getElementById('dropdown_ul')
+const dropdown = document.getElementById('dropdown')
+const dropdown_wrapper = document.getElementById('dropdown_wrapper')
+const dropdown_title = document.getElementById('dropdown_title')
 
 window.onload = function() {
     const stored_css = localStorage.getItem('current_css');
@@ -22,8 +24,18 @@ switch_button.addEventListener('click', function() {
     }
 });
 
-dropdown_ul.addEventListener('click', function(event) {
-    dropdown_ul.style.display = 'none';
-
+function dropdown_open(event) {
+    dropdown.style.display = 'block';
     event.stopPropagation();
-});
+}
+
+function dropdown_close(event) {
+    dropdown.style.display = 'none';
+    event.stopPropagation();
+}
+
+dropdown_title.addEventListener('click', dropdown_open);
+dropdown_title.addEventListener('pointerenter', dropdown_open);
+
+window.addEventListener('click', dropdown_close);
+dropdown_wrapper.addEventListener('pointerleave', dropdown_close)
