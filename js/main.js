@@ -35,7 +35,6 @@ function dropdown_close(event) {
 }
 
 dropdown_title.addEventListener('click', dropdown_open);
-dropdown_title.addEventListener('pointerenter', dropdown_open);
+dropdown_title.addEventListener('mouseenter', dropdown_open);
 
-window.addEventListener('click', dropdown_close);
-dropdown_wrapper.addEventListener('pointerleave', dropdown_close)
+dropdown_wrapper.addEventListener('mouseleave', dropdown_close)
