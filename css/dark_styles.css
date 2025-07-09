@@ -147,7 +147,6 @@ header {
 }
 
 .logo {
-    font-size: 40px;
     text-align: center;
 }
 
@@ -193,11 +192,11 @@ summary {
 ul li a {
     color: white;
     display: block;
-    font-size: 26px;
+    font-size: 22px;
     padding: 15px 20px;
     text-decoration: none;
     text-align: center;
-    width: 130px;
+    width: 110px;
 }
 
 ul li a:hover {
