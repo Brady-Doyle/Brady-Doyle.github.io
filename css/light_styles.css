@@ -15,7 +15,7 @@ button {
     border: none;
     background: none;
     cursor: pointer;
-    width: 110px;
+    width: 80px;
 }
 
 button img {
@@ -68,6 +68,10 @@ details {
 
 .dropdown li a:hover {
     background-color: #c9a0dc;
+}
+
+figcaption {
+    font-size: 16px;
 }
 
 footer {
@@ -126,10 +130,6 @@ header {
     padding: 1%;
 }
 
-.home figcaption {
-    font-size: 14px;
-}
-
 .home-link {
     font-weight: normal;
     list-style-type: none;
@@ -147,11 +147,7 @@ header {
 }
 
 .logo {
-    text-align: center;
-}
-
-.logo h1 {
-    font-weight: bold;
+    font-size: 40px;
     text-align: center;
 }
 
@@ -176,10 +172,6 @@ p {
     width: 90%;
 }
 
-.port figcaption {
-    font-size: 16px;
-}
-
 summary {
     cursor: pointer;
     font-size: 20px;
@@ -201,11 +193,11 @@ summary {
 ul li a {
     color: black;
     display: block;
-    font-size: 22px;
+    font-size: 26px;
     padding: 15px 20px;
     text-decoration: none;
     text-align: center;
-    width: 110px;
+    width: 130px;
 }
 
 ul li a:hover {
