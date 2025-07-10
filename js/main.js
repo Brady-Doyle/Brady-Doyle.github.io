@@ -1,49 +1,52 @@
-// Light/Dark
-const body=document.body
-const switch_button=document.getElementById("switch_button")
+window.addEventListener("DOMContentLoaded", function () {
+    // Light/Dark
+    const body=document.body
+    const switch_button=document.getElementById("switch_button")
 
-// Dropdown
-const dropdown=document.getElementById("dropdown")
-const dropdown_title=document.getElementById("dropdown_title")
-const dropdown_wrapper=document.getElementById("dropdown_wrapper")
+    // Dropdown
+    const dropdown=document.getElementById("dropdown")
+    const dropdown_title=document.getElementById("dropdown_title")
+    const dropdown_wrapper=document.getElementById("dropdown_wrapper")
 
-// Light/Dark
-switch_button.addEventListener("click", function() {
-    if (body.style.color==="black" && body.style.background==="white") {
-        body.style.color="white";
-        body.style.background="black";
-        localStorage.setItem("theme", "dark");
+    // Light/Dark
+    switch_button.addEventListener("click", function() {
+        if (body.style.color==="black" && body.style.background==="white") {
+            body.style.color="white";
+            body.style.background="black";
+            localStorage.setItem("theme", "dark");
+        }
+        else {
+            body.style.color="black";
+            body.style.background="white";
+            localStorage.setItem("theme", "light");
+        }
+    });
+
+    window.onload = function() {
+        const theme=localStorage.getItem("theme")
+
+        if (theme==="dark") {
+            body.style.color="white";
+            body.style.background="black";
+        }
+        else {
+            body.style.color="black";
+            body.style.background="white";
+        }
+    };
+
+    // Dropdown
+    function dropdown_open(event) {
+        dropdown.style.display="block";
+        event.stopPropagation();
     }
-    else {
-        body.style.color="black";
-        body.style.background="white";
-        localStorage.setItem("theme", "light");
+
+    function dropdown_close(event) {
+        dropdown.style.display="none";
+        event.stopPropagation();
     }
+
+    dropdown_title.addEventListener("click", dropdown_open);
+    dropdown_title.addEventListener("mouseenter", dropdown_open);
+    dropdown_wrapper.addEventListener("mouseleave", dropdown_close);
 });
-
-window.onload = function() {
-    const theme=localStorage.getItem("theme")
-    if (theme==="dark") {
-        body.style.color="white";
-        body.style.background="black";
-    }
-    else {
-        body.style.color="black";
-        body.style.background="white";
-    }
-};
-
-// Dropdown
-function dropdown_open(event) {
-    dropdown.style.display="block";
-    event.stopPropagation();
-}
-
-function dropdown_close(event) {
-    dropdown.style.display="none";
-    event.stopPropagation();
-}
-
-dropdown_title.addEventListener("click", dropdown_open);
-dropdown_title.addEventListener("mouseenter", dropdown_open);
-dropdown_wrapper.addEventListener("mouseleave", dropdown_close);
