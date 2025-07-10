@@ -3,57 +3,43 @@
 
     <head>
         <title>The Human Blog</title>
-        <link rel = 'icon' href = 'images/icon.png' type = 'image/png'>
-        <meta name = "description" content = "Hi, this is a site for people to share ideas and information
+        <link rel="icon" href="images/icon.png" type="image/png">
+        <meta name="description" content="Hi, this is a site for people to share ideas and information
         on all topics by posting articles. This blog's purpose is to host articles about anything written
         by anyone.">
-        <link id = 'style_sheet' rel = 'stylesheet' href = 'css/light_styles.css'>
+        <link rel="stylesheet" href="css/styles.css">
     </head>
 
     <body>
         <header>
-            <ul class = 'home-link'>
-                <li><a href = '../index.html'>Home</a></li>
-            </ul>
-            <h1 class = 'logo'>The Human Blog</h1>
-            <nav>
-                <ul>
-                    <li id = 'dropdown_li' class = 'title-links'>
-                        <div id="dropdown_wrapper" class="dropdown_wrapper">
-                            <a id="dropdown_title">Blogs</a>
-                            <ul id = 'dropdown' class = 'dropdown'>
-                                <li><a href = 'html/crime.html'>Crime</a></li>
-                                <li><a href = 'html/censorship.html'>Censorship</a></li>
-                                <li><a href = 'html/ai.html'>AI</a></li>
-                                <li><a href = 'html/politics.html'>Politics</a></li>
-                            </ul>
-                        </div>
-                        <button id = 'switch_button'><img src = '../images/light_dark_mode.png' alt = 'Light/Dark Mode'></button>
-                    </li>
-                </ul>
-            </nav>
+            <ul class="home-link"><li><a href="../index.html">Home</a></li></ul>
+            <h1 class="logo">The Human Blog</h1>
+            <nav><ul><li class="dropdown-links">
+                <div id="dropdown_wrapper" class="dropdown-wrapper">
+                    <a id="dropdown_title">Blogs</a>
+                    <ul id="dropdown" class="dropdown">
+                        <li><a href="html/crime.html">Crime</a></li>
+                        <li><a href="html/censorship.html">Censorship</a></li>
+                        <li><a href="html/ai.html">AI</a></li>
+                        <li><a href="html/politics.html">Politics</a></li>
+                    </ul>
+                </div>
+                <button id="switch_button"><img src="../images/light_dark_mode.png" alt="Light/Dark Mode"></button>
+            </li></ul></nav>
         </header>
 
-        <section class = 'home'>
-            <div class = 'intro'>A Repository of People's Ideas, Opinions, and Knowledge</div>
-            <div>Hi, this is a site for people to share ideas and information on all topics by posting articles.
-                This blog's purpose is to host articles about anything written by anyone.</div>
+        <section class="home">
+            <div class="intro">A Repository of People's Ideas, Opinions, and Knowledge</div>
+            <div>Hi, this is a site for people to share ideas and information on all topics by posting articles. This blog's purpose is to host articles about anything written by anyone.</div>
             <figure>
-                <img src = 'images/main_page.jpg' alt = 'cover'>
+                <img src="images/main_page.jpg" alt="cover">
                 <figcaption>Alona Horkova/iStock</figcaption>
             </figure>
-            <div>Please send your blog posts to 
-                <a href = 'mailto: thehumanblogemail@gmail.com?subject=Blog%20Post%20Submission&body=
-                Title%3A%20%0ADate%3A%20%0AAuthor%3A%20%0APost%3A%20'>thehumanblogemail@gmail.com</a>
-            and they will be posted promptly</div>
+            <div>Please send your blog posts to <a href="mailto: thehumanblogemail@gmail.com?subject=Blog%20Post%20Submission&body=Title%3A%20%0ADate%3A%20%0AAuthor%3A%20%0APost%3A%20">thehumanblogemail@gmail.com</a>and they will be posted promptly</div>
         </section>
 
-        <footer>
-            <section class = 'foot-contacts'>
-                <a href = 'mailto: thehumanblogemail@gmail.com?subject=Blog%20Post%20Submission&body=
-                Title%3A%20%0ADate%3A%20%0AAuthor%3A%20%0APost%3A%20'><img src = "images/email_icon.png" alt = "Email Icon"></a>
-            </section>
-        </footer>
-        <script src = 'js/main.js'></script>
+        <footer><section class="foot-contacts"><a href="mailto: thehumanblogemail@gmail.com?subject=Blog%20Post%20Submission&body=Title%3A%20%0ADate%3A%20%0AAuthor%3A%20%0APost%3A%20"><img src="images/email_icon.png" alt="Email Icon"></a></section></footer>
+
+        <script src="js/main.js"></script>
     </body>
 </html>

@@ -1,0 +1,176 @@
+a {
+    background: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+body {
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+}
+
+button img {
+    height: 40px;
+    width: auto;
+}
+
+button img:hover {
+    height: 50px;
+    width: auto;
+}
+
+details {
+    padding: 0 0 50px 0;
+}
+
+.detail1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 0 0 0;
+}
+
+.detail2 {
+    font-size: 26px;
+}
+
+.detail3 {
+    font-size: 20px;
+}
+
+.dropdown-wrapper {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    z-index: 999;
+}
+
+.dropdown li a:hover {
+    background-color: #c9a0dc;
+}
+
+.dropdown-links {
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+figcaption {
+    font-size: 16px;
+}
+
+footer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.foot-contacts img {
+    padding: 40px 0;
+    width: 50px;
+}
+
+.foot-contacts img:hover {
+    width: 60px;
+}
+
+img {
+    border-radius: 25px;
+    max-width: 800px;
+    width: 100%;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.home {
+    border-radius: 50px;
+    font-size: 24px;
+    margin: 20px auto;
+    max-width: 1000px;
+    text-align: center;
+    width: 90%;
+}
+
+.home a {
+    color: rgb(0, 119, 181);
+}
+
+.home a:hover {
+    font-size: 26px;
+}
+
+.home-link {
+    list-style-type: none;
+    min-width: 140px;
+    padding: 0;
+    text-align: left;
+    width: 35%;
+}
+
+.intro {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.logo {
+    text-align: center;
+}
+
+nav {
+    text-align: right;   
+    width: 35%;
+}
+
+.port {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    max-width: 1000px;
+    text-align: center;
+    width: 90%;
+}
+
+summary {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+ul li a {
+    display: block;
+    font-size: 22px;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+    width: 110px;
+}
+
+ul li a:hover {
+    background: #c9a0dc;
+}

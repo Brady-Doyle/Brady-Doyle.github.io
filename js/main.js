@@ -1,40 +1,49 @@
-const style_sheet = document.getElementById('style_sheet')
-const switch_button = document.getElementById('switch_button')
-const dropdown = document.getElementById('dropdown')
-const dropdown_wrapper = document.getElementById('dropdown_wrapper')
-const dropdown_title = document.getElementById('dropdown_title')
+// Light/Dark
+const body=document.body
+const switch_button=document.getElementById("switch_button")
 
-window.onload = function() {
-    const stored_css = localStorage.getItem('current_css');
-    if (stored_css) {
-        style_sheet.setAttribute('href', stored_css)
-    }
-}
+// Dropdown
+const dropdown=document.getElementById("dropdown")
+const dropdown_title=document.getElementById("dropdown_title")
+const dropdown_wrapper=document.getElementById("dropdown_wrapper")
 
-switch_button.addEventListener('click', function() {
-    const current_css = style_sheet.getAttribute('href');
-
-    if (current_css === '../css/dark_styles.css') {
-        style_sheet.setAttribute('href', '../css/light_styles.css');
-        localStorage.setItem('current_css', '../css/light_styles.css');
+// Light/Dark
+switch_button.addEventListener("click", function() {
+    if (body.style.color==="black" && body.style.background==="white") {
+        body.style.color="white";
+        body.style.background="black";
+        localStorage.setItem("theme", "dark");
     }
     else {
-        style_sheet.setAttribute('href', '../css/dark_styles.css');
-        localStorage.setItem('current_css', '../css/dark_styles.css');
+        body.style.color="black";
+        body.style.background="white";
+        localStorage.setItem("theme", "light");
     }
 });
 
+window.onload = function() {
+    const theme=localStorage.getItem("theme")
+    if (theme==="dark") {
+        body.style.color="white";
+        body.style.background="black";
+    }
+    else {
+        body.style.color="black";
+        body.style.background="white";
+    }
+};
+
+// Dropdown
 function dropdown_open(event) {
-    dropdown.style.display = 'block';
+    dropdown.style.display="block";
     event.stopPropagation();
 }
 
 function dropdown_close(event) {
-    dropdown.style.display = 'none';
+    dropdown.style.display="none";
     event.stopPropagation();
 }
 
-dropdown_title.addEventListener('click', dropdown_open);
-dropdown_title.addEventListener('mouseenter', dropdown_open);
-
-dropdown_wrapper.addEventListener('mouseleave', dropdown_close)
+dropdown_title.addEventListener("click", dropdown_open);
+dropdown_title.addEventListener("mouseenter", dropdown_open);
+dropdown_wrapper.addEventListener("mouseleave", dropdown_close);
