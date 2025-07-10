@@ -55,11 +55,11 @@ details {
     list-style-type: none;
     padding: 0;
     position: absolute;
-    z-index: 999;
+    z-index: 1000;
 }
 
 .dropdown li a:hover {
-    background-color: #c9a0dc;
+    background: #c9a0dc;
 }
 
 .dropdown-links {

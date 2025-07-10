@@ -13,11 +13,16 @@ window.addEventListener("DOMContentLoaded", function () {
         if (body.style.color==="black" && body.style.background==="white") {
             body.style.color="white";
             body.style.background="black";
+            dropdown.style.color="white";
+            dropdown.style.background="black";
+
             localStorage.setItem("theme", "dark");
         }
         else {
             body.style.color="black";
             body.style.background="white";
+            dropdown.style.color="black";
+            dropdown.style.background="white";
             localStorage.setItem("theme", "light");
         }
     });
@@ -28,10 +33,15 @@ window.addEventListener("DOMContentLoaded", function () {
         if (theme==="dark") {
             body.style.color="white";
             body.style.background="black";
+            dropdown.style.color="white";
+            dropdown.style.background="black";
         }
         else {
             body.style.color="black";
             body.style.background="white";
+            dropdown.style.color="black";
+            dropdown.style.background="white";
+
         }
     };
 
