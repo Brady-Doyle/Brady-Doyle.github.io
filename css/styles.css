@@ -2,6 +2,7 @@ a {
     background: inherit;
     color: inherit;
     cursor: pointer;
+    text-decoration: none;
 }
 
 body {
@@ -24,7 +25,7 @@ button img {
 }
 
 button img:hover {
-    height: 50px;
+    height: 45px;
     width: auto;
 }
 
@@ -79,12 +80,12 @@ footer {
 }
 
 .foot-contacts img {
-    padding: 40px 0;
-    width: 50px;
+    padding: 40px 10px;
+    width: 40px;
 }
 
 .foot-contacts img:hover {
-    width: 60px;
+    width: 45px;
 }
 
 img {
@@ -133,6 +134,10 @@ header {
 
 .logo {
     text-align: center;
+}
+
+.logo:hover {
+    font-size: 35px;
 }
 
 nav {

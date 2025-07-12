@@ -1,0 +1,15 @@
+Short Term:
+Add "About Me" page
+Link title to home
+Finish AI article
+Add linkedin, github, instragram, and email icons to about me page
+
+Long Term:
+Build backend
+Store articles in a database
+Allow for accounts
+Allow for interaction with posts
+Allow people to post articles through the website
+Check articles for AI
+
+
