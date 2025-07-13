@@ -12,6 +12,40 @@ body {
     width: 100%;
 }
 
+.back_to_top {
+    animation-name: appear;
+    animation-timeline: scroll(y);
+    padding: 0 20px;
+    right: 0;
+    top: 90%;
+    width: 40px;
+}
+
+.back_to_top:hover {
+    width: 45px;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        display: none;
+        position: fixed;
+    }
+    3% {
+        opacity: 0;
+        display: none;
+    }
+    3.5% {
+        opacity: 1;
+        display: block;
+    }
+    100% {
+        opacity: 1;
+        display: block;
+        position: fixed;
+    }
+}
+
 button {
     background: none;
     border: none;
@@ -20,13 +54,11 @@ button {
 }
 
 button img {
-    height: 40px;
-    width: auto;
+    width: 40px;
 }
 
 button img:hover {
-    height: 45px;
-    width: auto;
+    width: 45px;
 }
 
 details {
@@ -88,12 +120,6 @@ footer {
     width: 45px;
 }
 
-img {
-    border-radius: 25px;
-    max-width: 800px;
-    width: 100%;
-}
-
 header {
     align-items: center;
     display: flex;
@@ -124,6 +150,16 @@ header {
     padding: 0;
     text-align: left;
     width: 35%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    border-radius: 25px;
+    max-width: 800px;
+    width: 100%;
 }
 
 .intro {
