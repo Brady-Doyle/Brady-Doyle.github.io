@@ -12,27 +12,19 @@ body {
     width: 100%;
 }
 
-.back_to_top {
-    animation-name: appear;
-    animation-timeline: scroll(y);
+.back-to-top {
+    display: block;
+    opacity: 0;
     padding: 0 20px;
     position: fixed;
     right: 0;
     top: 90%;
+    transition: opacity 0.3s ease;
     width: 40px;
 }
 
-.back_to_top:hover {
+.back-to-top:hover {
     width: 45px;
-}
-
-@keyframes appear {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
 button {
