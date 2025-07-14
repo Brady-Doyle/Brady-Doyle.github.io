@@ -15,7 +15,9 @@ body {
 .back_to_top {
     animation-name: appear;
     animation-timeline: scroll(y);
+    position: none;
     padding: 0 20px;
+    position: fixed;
     right: 0;
     top: 90%;
     width: 40px;
@@ -28,21 +30,9 @@ body {
 @keyframes appear {
     0% {
         opacity: 0;
-        display: none;
-        position: fixed;
-    }
-    3% {
-        opacity: 0;
-        display: none;
-    }
-    3.5% {
-        opacity: 1;
-        display: block;
     }
     100% {
         opacity: 1;
-        display: block;
-        position: fixed;
     }
 }
 
