@@ -1,11 +1,12 @@
-// Loading themes
+// Loading theme
 const theme=localStorage.getItem("theme")
 
-// Loading themes
+// Loading theme
 if (theme==="dark") {
   document.documentElement.style.background="black";
   document.documentElement.style.color="white";
-} else {
+}
+else {
   document.documentElement.style.background="white";
   document.documentElement.style.color="black";
 }

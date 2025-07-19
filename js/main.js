@@ -30,6 +30,24 @@ window.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    window.onload = function() {
+        const theme=localStorage.getItem("theme")
+
+        if (theme==="dark") {
+            body.style.color="white";
+            body.style.background="black";
+            dropdown.style.color="white";
+            dropdown.style.background="black";
+        }
+        else {
+            body.style.color="black";
+            body.style.background="white";
+            dropdown.style.color="black";
+            dropdown.style.background="white";
+
+        }
+    };
+
     // Dropdown
     function dropdown_open(event) {
         dropdown.style.display="block";
