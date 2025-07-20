@@ -12,5 +12,3 @@ Store articles in a database
 Allow for accounts
 Allow for interaction with posts
 Check articles for AI
-
-
