@@ -60,10 +60,6 @@ details {
     font-size: 20px;
 }
 
-.dropdown-wrapper {
-    position: relative;
-}
-
 .dropdown {
     display: none;
     list-style-type: none;
@@ -80,6 +76,21 @@ details {
     display: flex;
     justify-content: end;
     position: relative;
+}
+
+.dropdown-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-wrapper:hover {
+    outline-style: solid;
+    outline-width: 2px;
+}
+
+.dropdown-wrapper:hover .dropdown {
+    outline-style: solid;
+    outline-width: 2px;
 }
 
 figcaption {
@@ -125,12 +136,17 @@ header {
     font-size: 26px;
 }
 
-.home-link {
+.about-link {
     list-style-type: none;
     min-width: 140px;
     padding: 0;
     text-align: left;
     width: 35%;
+}
+
+.about-link a:hover {
+    outline-style: solid;
+    outline-width: 2px;
 }
 
 html {
