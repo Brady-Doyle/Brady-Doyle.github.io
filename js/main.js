@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded", function () {
             body.style.color="white";
             body.style.background="black";
             dropdown_wrapper.style.color="white";
-            dropdown_wrapper.style.background="black";
+            dropdown_title.style.background="black";
             dropdown.style.color="white";
             dropdown.style.background="black";
 
@@ -26,8 +26,8 @@ window.addEventListener("DOMContentLoaded", function () {
         else {
             body.style.color="black";
             body.style.background="white";
-            dropdown_wrapper.style.color="black";
-            dropdown_wrapper.style.background="white";
+            dropdown_title.style.color="black";
+            dropdown_title.style.background="white";
             dropdown.style.color="black";
             dropdown.style.background="white";
             localStorage.setItem("theme", "light");
@@ -40,15 +40,15 @@ window.addEventListener("DOMContentLoaded", function () {
         if (theme==="dark") {
             body.style.color="white";
             body.style.background="black";
-            dropdown_wrapper.style.color="white";
-            dropdown_wrapper.style.background="black";
+            dropdown_title.style.color="white";
+            dropdown_title.style.background="black";
             dropdown.style.color="white";
             dropdown.style.background="black";        }
         else {
             body.style.color="black";
             body.style.background="white";
-            dropdown_wrapper.style.color="black";
-            dropdown_wrapper.style.background="white";
+            dropdown_title.style.color="black";
+            dropdown_title.style.background="white";
             dropdown.style.color="black";
             dropdown.style.background="white";
         }

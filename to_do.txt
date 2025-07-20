@@ -5,6 +5,7 @@ Add linkedin, github, instragram, and email icons to about me page - done
 Add "back to top button" - done
 Finish AI article
 Finish about me article
+Fix logo centering
 
 Long Term:
 Build backend
