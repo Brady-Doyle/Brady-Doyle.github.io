@@ -8,6 +8,7 @@ a {
 .about-link {
     display: inline;
     list-style-type: none;
+    text-align: right;
 }
 
 .about-link a:hover {
@@ -89,7 +90,6 @@ details {
 }
 
 .dropdown-wrapper {
-    display: inline-block;
     position: relative;
 }
 
@@ -176,7 +176,6 @@ img {
 }
 
 nav {
-    align-items: center;
     display: flex;
     justify-content: right;
 }
