@@ -136,6 +136,10 @@ header {
     font-size: 26px;
 }
 
+.home div {
+    padding: 60px;
+}
+
 .about-link {
     list-style-type: none;
     min-width: 140px;
