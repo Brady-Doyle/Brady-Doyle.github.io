@@ -6,8 +6,9 @@ a {
 }
 
 .about-link {
+    justify-content: left;
     list-style-type: none;
-    text-align: left;
+    align-items: center;
 }
 
 .about-link a:hover {
@@ -167,7 +168,9 @@ img {
 }
 
 .logo {
-    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .logo:hover {
@@ -175,8 +178,9 @@ img {
 }
 
 nav {
-    align-items: right;
+    align-items: center;
     display: flex;
+    justify-content: right;
 }
 
 .port {
