@@ -137,15 +137,11 @@ header {
 }
 
 .home div {
-    padding: 60px;
+    padding: 40px;
 }
 
 .about-link {
-    list-style-type: none;
-    min-width: 140px;
-    padding: 0;
     text-align: left;
-    width: 35%;
 }
 
 .about-link a:hover {
@@ -166,12 +162,11 @@ img {
 .intro {
     font-size: 36px;
     font-weight: bold;
-    padding: 20px 0 0 0;
+    padding: 20px 0 20px 0;
 }
 
 .logo {
     text-align: center;
-    width: 30%;
 }
 
 .logo:hover {
@@ -179,9 +174,8 @@ img {
 }
 
 nav {
-    display: inline-block;
-    text-align: right;   
-    width: 35%;
+    align-items: right;
+    display: flex;
 }
 
 .port {
