@@ -8,7 +8,7 @@ a {
 .about-link {
     display: inline;
     list-style-type: none;
-    text-align: right;
+    text-align: left;
 }
 
 .about-link a:hover {
@@ -125,7 +125,6 @@ footer {
 header {
     align-items: center;
     display: flex;
-    justify-content: space-between;
     padding: 0 20px;
 }
 
