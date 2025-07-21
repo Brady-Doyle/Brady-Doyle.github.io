@@ -141,7 +141,7 @@ header {
     min-width: 140px;
     padding: 0;
     text-align: left;
-    width: 35%;
+    width: 20%;
 }
 
 .about-link a:hover {
@@ -175,7 +175,7 @@ img {
 
 nav {
     text-align: right;   
-    width: 35%;
+    width: 20%;
 }
 
 .port {
