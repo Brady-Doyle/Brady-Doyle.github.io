@@ -6,9 +6,8 @@ a {
 }
 
 .about-link {
-    justify-content: left;
+    display: inline;
     list-style-type: none;
-    align-items: center;
 }
 
 .about-link a:hover {
@@ -168,9 +167,8 @@ img {
 }
 
 .logo {
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    display: inline;
+    text-align: center;
 }
 
 .logo:hover {
