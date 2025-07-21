@@ -5,6 +5,15 @@ a {
     text-decoration: none;
 }
 
+.about-link {
+    text-align: left;
+}
+
+.about-link a:hover {
+    outline-style: solid;
+    outline-width: 2px;
+}
+
 body {
     font-family: arial;
     margin: 0;
@@ -138,15 +147,6 @@ header {
 
 .home div {
     padding: 20px;
-}
-
-.about-link {
-    text-align: left;
-}
-
-.about-link a:hover {
-    outline-style: solid;
-    outline-width: 2px;
 }
 
 html {
