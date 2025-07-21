@@ -20,7 +20,6 @@ window.addEventListener("DOMContentLoaded", function () {
             dropdown_title.style.background="black";
             dropdown.style.color="white";
             dropdown.style.background="black";
-
             localStorage.setItem("theme", "dark");
         }
         else {
@@ -43,7 +42,8 @@ window.addEventListener("DOMContentLoaded", function () {
             dropdown_title.style.color="white";
             dropdown_title.style.background="black";
             dropdown.style.color="white";
-            dropdown.style.background="black";        }
+            dropdown.style.background="black";        
+        }
         else {
             body.style.color="black";
             body.style.background="white";
