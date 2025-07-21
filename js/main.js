@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded", function () {
         if (body.style.color==="black" && body.style.background==="white") {
             body.style.color="white";
             body.style.background="black";
-            dropdown_wrapper.style.color="white";
+            dropdown_title.style.color="white";
             dropdown_title.style.background="black";
             dropdown.style.color="white";
             dropdown.style.background="black";
