@@ -34,6 +34,8 @@ a {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: arial;
     min-height: 100vh;
     margin: 0;
@@ -132,11 +134,11 @@ header {
 }
 
 .home {
-    border-radius: 50px;
+    align-items: center;
+    flex: 1;
     font-size: 24px;
-    margin: 20px auto auto auto;
+    margin: 20px auto;
     max-width: 1000px;
-    text-align: center;
     width: 90%;
 }
 
@@ -191,11 +193,9 @@ nav ul {
     align-items: center;
     border-bottom-style: solid;
     border-bottom-width: 2px;
-    display: flex;
-    flex-direction: column;
-    margin: 20px auto auto auto;
+    flex: 1;
+    margin: 20px auto;
     max-width: 1000px;
-    text-align: center;
     width: 90%;
 }
 
