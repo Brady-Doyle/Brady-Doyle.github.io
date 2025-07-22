@@ -134,13 +134,7 @@ header {
 }
 
 .home {
-    align-items: center;
-    flex: 1;
     font-size: 24px;
-    margin: 20px auto;
-    max-width: 1000px;
-    text-align: center;
-    width: 90%;
 }
 
 .home a {
@@ -190,7 +184,7 @@ nav ul {
     padding: 0;
 }
 
-.port {
+section {
     align-items: center;
     border-bottom-style: solid;
     border-bottom-width: 2px;
