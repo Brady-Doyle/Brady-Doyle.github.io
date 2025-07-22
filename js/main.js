@@ -67,8 +67,8 @@ window.addEventListener("DOMContentLoaded", function () {
 
     dropdown_title.addEventListener("click", dropdown_open);
     dropdown_title.addEventListener("mouseenter", dropdown_open);
-    window.addEventListener("click", dropdown_close);
     dropdown_wrapper.addEventListener("mouseleave", dropdown_close);
+    document.addEventListener("click", dropdown_close);
 });
 
 // Back to Top
