@@ -6,21 +6,16 @@ a {
 }
 
 .about-link {
-    display: inline;
+    display: inline-block;
     list-style-type: none;
+    padding: 0;
     text-align: left;
+    width: 200px;
 }
 
 .about-link a:hover {
     outline-style: solid;
     outline-width: 2px;
-}
-
-body {
-    font-family: arial;
-    margin: 0;
-    padding: 0;
-    width: 100%;
 }
 
 .back-to-top {
@@ -36,6 +31,17 @@ body {
 
 .back-to-top:hover {
     width: 45px;
+}
+
+body {
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.bottom-detail {
+    padding: 0 0 20px 0;
 }
 
 button {
@@ -54,13 +60,12 @@ button img:hover {
 }
 
 details {
-    padding: 0 0 50px 0;
+    padding: 0 0 60px 0;
 }
 
 .detail1 {
     font-size: 30px;
     font-weight: bold;
-    padding: 10px 0 0 0;
 }
 
 .detail2 {
@@ -176,8 +181,11 @@ img {
 }
 
 nav {
-    display: flex;
     justify-content: right;
+}
+
+nav ul {
+    padding: 0;
 }
 
 .port {
@@ -205,10 +213,10 @@ summary {
 ul li a {
     display: block;
     font-size: 22px;
-    padding: 15px 20px;
+    padding: 15px 0px;
     text-decoration: none;
     text-align: center;
-    width: 110px;
+    width: 120px;
 }
 
 ul li a:hover {
