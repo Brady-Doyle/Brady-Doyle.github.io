@@ -127,6 +127,9 @@ footer {
     width: 45px;
 }
 
+h3 {
+    text-align: left;
+}    
 header {
     align-items: center;
     display: flex;
@@ -134,7 +137,15 @@ header {
 }
 
 .home {
+    align-items: center;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    flex: 1;
     font-size: 24px;
+    margin: 20px auto;
+    max-width: 1000px;
+    text-align: center;
+    width: 90%;
 }
 
 .home a {
@@ -150,7 +161,6 @@ header {
 }
 
 html {
-    min-height: 100vh;
     scroll-behavior: smooth;
 }
 
@@ -176,15 +186,12 @@ img {
     font-size: 35px;
 }
 
-nav {
-    justify-content: right;
+p {
+    text-align: left;
+    text-indent: 20px;
 }
 
-nav ul {
-    padding: 0;
-}
-
-section {
+.port {
     align-items: center;
     border-bottom-style: solid;
     border-bottom-width: 2px;
@@ -193,6 +200,14 @@ section {
     max-width: 1000px;
     text-align: center;
     width: 90%;
+}
+
+nav {
+    justify-content: right;
+}
+
+nav ul {
+    padding: 0;
 }
 
 summary {
