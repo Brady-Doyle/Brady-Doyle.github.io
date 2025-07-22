@@ -58,10 +58,6 @@ button img:hover {
     width: 45px;
 }
 
-details {
-    padding: 0 0 60px 0;
-}
-
 .detail1 {
     font-size: 30px;
     font-weight: bold;
@@ -198,6 +194,7 @@ p {
     flex: 1;
     margin: 20px auto;
     max-width: 1000px;
+    padding: 0 0 60px 0;
     text-align: center;
     width: 90%;
 }
