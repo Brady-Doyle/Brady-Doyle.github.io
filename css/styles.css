@@ -194,6 +194,8 @@ nav ul {
 
 .port {
     align-items: center;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
     display: flex;
     flex-direction: column;
     margin: 20px auto;
