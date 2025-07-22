@@ -204,6 +204,10 @@ nav ul {
     width: 90%;
 }
 
+section {
+    flex: 1;
+}
+
 summary {
     cursor: pointer;
     font-size: 20px;
